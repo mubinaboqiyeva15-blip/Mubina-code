@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+button {
+    padding: 2% 4%;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, rgba(0,41,247,1), rgba(252,70,233,1));
+}
+button:hover {
+    background: linear-gradient(90deg, rgba(252,70,233,1), rgba(0,41,247,1));
+}
+
+.button {
+    padding: 10% 40%;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, rgba(0,41,247,1), rgba(252,70,233,1));
+}
+
+.button:hover {
+    background: linear-gradient(90deg, rgba(252,70,233,1), rgba(0,41,247,1));
+}
+
+/* navigation bar*/
+
+nav {
+    display: flex;
+    padding: 1.2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+nav > h1 {
+    letter-spacing: 2px;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(130deg, rgba(0,41,247,1) 15%, rgba(252,70,233,1) 56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    
+}
+
+.nav-links > li {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-links > li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: brown;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links > li:hover::after {
+    width: 100%;
+}
+body {
+     height: 100vh;
+     background-image: url(hy.jpg);
+     background-size: cover;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.con {
+    width: 400px;
+    height: 350px;
+    background-color: aqua;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    margin-top: 5rem;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+}
+
+.con > h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.con > input {
+    text-transform: capitalize;
+    padding-left: 15px;
+    width: 80%;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 25px;
+    border: 1px solid silver;
+}
+
+.con > textarea {
+    width: 80%;
+    height: 80px;
+    border-radius: 25px;
+    border: 1px solid silver;
+    margin-top: 5px;
+    padding: 7.5px;
+}
+
+.con > button {
+    margin-top: 10px;
+
+}
